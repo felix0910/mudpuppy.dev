@@ -1,0 +1,388 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><head>\r\n    <link rel=\"stylesheet\" href=\"styles.css\">\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap\" rel=\"stylesheet\">\r\n    <link rel=\"stylesheet\" href=\"styles.css\">\r\n</head>\r\n\r\n      \r\n<div id=\"dvd\">\r\n    <img src=\"creative-commons-horse.png\" class=\"logo\">\r\n</div>\r\n\r\n<script src=\"./main.js\" charset=\"utf-8\"></script>\r\n\r\n    <div class=\"header\">\r\n        test<br>\r\n        insert header image here\r\n    </div>\r\n    <div class=\"navigation\">\r\n        buttons here\r\n    </div>\r\n    <div class=\"spacer\">\r\n        empty box\r\n    </div>\r\n    <div class=\"main\">\r\n        main body\r\n        <div class=\"team\">\r\n            names\r\n        </div>\r\n        <div class=\"devblog\">\r\n            text filler\r\n        </div>\r\n        <div class=\"projects\">\r\n            projects here\r\n        </div>\r\n    </div>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 883d73f64766e2551218bd5861bdb78c7bbc43b7)
++++ b/index.html	(date 1749237965666)
+@@ -1,8 +1,7 @@
+ <head>
+-    <link rel="stylesheet" href="styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
++    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles.css">
+ </head>
+ 
+@@ -13,25 +12,116 @@
+ 
+ <script src="./main.js" charset="utf-8"></script>
+ 
+-    <div class="header">
+-        test<br>
+-        insert header image here
+-    </div>
+-    <div class="navigation">
+-        buttons here
+-    </div>
+-    <div class="spacer">
+-        empty box
+-    </div>
+-    <div class="main">
+-        main body
+-        <div class="team">
+-            names
+-        </div>
+-        <div class="devblog">
+-            text filler
+-        </div>
+-        <div class="projects">
+-            projects here
++
++    <div class="margins">
++        <div class="header">
++            <div class="banner">
++                <img src="mudpuppy%20banner.png" class="banner_image">
++            </div>
++            <div class="banner_margin">
++
++            </div>
++        </div>
++
++        <div class="navigation">
++            <button class="navbtn">home</button>
++            <button class="navbtn">team</button>
++            <button class="navbtn">projects</button>
++            <button class="navbtn">dev blog</button>
++            <button class="navbtn">about us</button>
++            <button class="navbtn">contact</button>
++            <button class="navbtn">index</button>
++        </div>
++        <div class="spacer">
++            
++        </div>
++        <div class="main">
++            <div class="main_content">
++                <div class="leftside">
++                    <section>
++                        <div class="team">
++                            <div class="team_title">The Team</div>
++
++                            <div class="user">
++                                <img src="images/felix.png" class="avatar">
++                                <div class="user_text">
++                                    <div class="titular">
++                                        <div class="name_title">Felix</div>
++                                        <div class="user_flag"><img src="userstuff/usflag.png" class="flagimg" title="United States of America"></div>
++                                    </div>
++
++                                    <div class="pronouns">he/him</div>
++                                    <div class="user_info">Programmer</div>
++                                    <div class="user_icons">
++                                        <img src="userstuff/panflag.png" class="iconimg" title="Panromantic">
++                                        <img src="userstuff/aceflag.png" class="iconimg" title="Asexual">
++                                    </div>
++                                </div>
++                            </div>
++
++                            <div class="user">
++                                <img src="images/honey.png" class="avatar">
++                                <div class="user_text">
++                                    <div class="titular">
++                                        <div class="name_title">Honey Woffl</div>
++                                        <div class="user_flag"><img src="userstuff/trinidad.png" class="flagimg" title="Trinidad & Tobago"></div>
++                                    </div>
++
++                                    <div class="pronouns">they/them | he/him </div>
++                                    <div class="user_info">Artist / Illustrator</div>
++                                    <div class="user_icons">
++                                        <img src="userstuff/tflag.png" class="iconimg" title="Transgender">
++                                        <img src="userstuff/panflag.png" class="iconimg" title="Pansexual">
++                                    </div>
++                                </div>
++                            </div>
++
++                            <div class="user">
++                                <img src="images/harmony.png" class="avatar">
++                                <div class="user_text">
++                                    <div class="titular">
++                                        <div class="name_title">Harmony</div>
++                                        <div class="user_flag"><img src="userstuff/trinidad.png" class="flagimg" title="Trinidad & Tobago"></div>
++                                    </div>
++
++                                    <div class="pronouns">he/him</div>
++                                    <div class="user_info">Graphics Designer</div>
++                                    <div class="user_icons">
++                                        <img src="userstuff/panflag.png" class="iconimg" title="Pansexual">
++                                    </div>
++                                </div>
++                            </div>
++
++                            <div class="user">
++                                <img src="images/poseidon.png" class="avatar">
++                                <div class="user_text">
++                                    <div class="titular">
++                                        <div class="name_title">Poseidon</div>
++                                        <div class="user_flag"><img src="userstuff/usflag.png" class="flagimg" title="United States of America"></div>
++                                    </div>
++
++                                    <div class="pronouns">he/him</div>
++                                    <div class="user_info">Programmer</div>
++                                    <div class="user_icons">
++                                        <img src="userstuff/gay.png" class="iconimg" title="Gay">
++                                    </div>
++                                </div>
++                            </div>
++                            <div class="whitespace"></div>
++                        </div>
++                    </section>
++                    
++                    
++                    <div class="projects">
++                        projects here
++                    </div>
++                </div>
++                <div class="devblog">
++                    text filler - devblog
++                    <br>
++                    this site is a work in progress
++                </div>
++            </div>
++           
+         </div>
+     </div>
+Index: styles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.header {\r\n    border-style: solid;\r\n    border-width: 5px;\r\n    border-color: black;\r\n    margin-top: 50px;\r\n    margin-left: 20%;\r\n    margin-right: 20%;\r\n    display: flex;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/styles.css b/styles.css
+--- a/styles.css	(revision 883d73f64766e2551218bd5861bdb78c7bbc43b7)
++++ b/styles.css	(date 1749237787823)
+@@ -1,9 +1,176 @@
++iframe {
++    border: 0;
++    width: 100%;
++    height: 600px;
++    margin: 0;
++    padding: 0;
++    display: block;
++}
++
++.margins{
++    margin-top: 0.5%;
++    margin-left: 20%;
++    margin-right: 20%;
++    margin-bottom: 5%;
++}
++
+ .header {
+     border-style: solid;
+     border-width: 5px;
+     border-color: black;
+-    margin-top: 50px;
+-    margin-left: 20%;
+-    margin-right: 20%;
++    border-radius: 10px;
++    display: flex;
++    background-color: white;
++}
++
++.banner {
++    width: 75%;
++    
++    border-right: solid;
++    border-width: 5px;
++}
++
++.banner_margin {
++    width: 25%;
++}
++
++.banner_image {
++    width: 100%;
++}
++
++
++
++.navigation {
++    display: flex;
++    border-style: solid;
++    border-radius: 10px;
++    height: 45px;
++    max-height: 45px;
++    margin-top: 5px;
++    margin-bottom: 5px;
++
++}
++
++.navbtn {
++    margin: 5px;
++    flex: 1 1 auto;
++    height: 35px;
++    background-color: transparent;
++    border-radius: 10px;
++    font-size: 20px;
++    background-color: white;
++}
++
++.navbtn:hover {
++    margin-top: 6px;
++    margin-bottom: 5px;
++}
++
++.spacer {
++    height: 45px;
++    border-style: solid;
++    border-radius: 10px;
++    margin-bottom: 5px;
++}
++
++.main {
++    
++}
++
++.main_content {
++    display: flex;
++    border-style: solid;
++    border-radius: 10px;
++}
++
++.leftside {
++    width: 35%;
++    margin: 5px;
++    margin-left: 10px;
++}
++
++.team {
++    border-style: solid;
++    border-radius: 10px;
++    margin-bottom: 5px;
++    background-color: white;
++}
++
++.projects {
++    border-style: solid;
++    border-radius: 10px;
++    background-color: white;
++}
++.devblog {
++    width: 65%;
++    border-style: solid;
++    border-radius: 10px;
++    margin: 5px;
++    margin-right: 10px;
++    background-color: white;
++}
++
++.team_title{
++    margin-top: 10px;
++    text-align: center;
++    font-weight: bold;
++    font-size: 25px;
++    margin-bottom: 25px;
++}
++
++.user {
++    margin: 10px;
++    display: flex;
++    
++}
++
++.user_text {
++    margin-left: 10px;
++}
++
++.name_title {
++    font-size: 30px;
++}
++
++.titular {
+     display: flex;
++}
++
++.user_flag {
++    margin-left: 10px;
++    width: 50px;
++}
++
++.flagimg
++{
++    margin-top: 8px;
++    width: 25px;
++}
++
++.pronouns {
++    
++}
++
++.avatar {
++    width: 100px;
++    
++}
++
++.user_info {
++    margin-top: 10px;
++    
++}
++
++.user_icons {
++    display: flex;
++    gap: 5px;
++}
++
++.iconimg{
++    margin-top: 5px;
++    width: 25px;
++}
++
++.whitespace {
++    margin-top: 30px;
+ }
+\ No newline at end of file
+Index: main.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>let dvd = document.getElementById('dvd')\r\nlet x_incr = 1;\r\nlet y_incr = 1;\r\nlet x_mouse;\r\nlet y_mouse;\r\n\r\nfunction init()\r\n{\r\n    dvd.style.position = 'absolute';\r\n    dvd.style.top = Math.floor(Math.random() * (window.innerHeight - dvd.offsetHeight));\r\n    dvd.style.left = Math.floor(Math.random() * (window.innerWidth - dvd.offsetWidth));\r\n    document.body.style.background = '#4d4d4d';\r\n    setInterval(frame, 5);\r\n}\r\n\r\nfunction handle_collision() {\r\n    let dvd_height = dvd.offsetHeight;\r\n    let dvd_width = dvd.offsetWidth;\r\n    let dvd_top = dvd.offsetTop;\r\n    let dvd_left = dvd.offsetLeft;\r\n    let win_height = window.innerHeight;\r\n    let win_width = window.innerWidth;\r\n\r\n    if(dvd_left <= 0 || dvd_left + dvd_width >= win_width)\r\n    {\r\n        x_incr = ~x_incr + 1;\r\n    }\r\n\r\n    if(dvd_top <= 0 || dvd_top + dvd_height >= win_height)\r\n    {\r\n        y_incr = ~y_incr + 1;\r\n    }\r\n    let xin = false;\r\n    let yin = false;\r\n\r\n    if(x_mouse > dvd_left && x_mouse < (dvd_left + dvd_width))\r\n        xin = true;\r\n    if(y_mouse > dvd_top && y_mouse < (dvd_top + dvd_height))\r\n        yin = true;\r\n    if(xin == true && yin == true)\r\n    {\r\n        dvd.style.top = Math.floor(Math.random() * (window.innerHeight - dvd_height));\r\n        dvd.style.left = Math.floor(Math.random() * (window.innerWidth - dvd_width));\r\n        x_incr = ~x_incr + 1;\r\n        y_incr = ~y_incr + 1;\r\n    }\r\n}\r\n\r\nfunction frame() {\r\n    handle_collision();\r\n    dvd.style.top = dvd.offsetTop + y_incr;\r\n    dvd.style.left = dvd.offsetLeft + x_incr;\r\n}\r\n\r\ninit();\r\n\r\ndocument.onmousemove = function(e){\r\n    x_mouse = e.clientX;\r\n    y_mouse = e.clientY;\r\n};
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.js b/main.js
+--- a/main.js	(revision 883d73f64766e2551218bd5861bdb78c7bbc43b7)
++++ b/main.js	(date 1749236959516)
+@@ -7,9 +7,10 @@
+ function init()
+ {
+     dvd.style.position = 'absolute';
++    dvd.style.zIndex = -1;
+     dvd.style.top = Math.floor(Math.random() * (window.innerHeight - dvd.offsetHeight));
+     dvd.style.left = Math.floor(Math.random() * (window.innerWidth - dvd.offsetWidth));
+-    document.body.style.background = '#4d4d4d';
++    //document.body.style.background = '#4d4d4d';
+     setInterval(frame, 5);
+ }
+ 
+@@ -33,7 +34,7 @@
+     let xin = false;
+     let yin = false;
+ 
+-    if(x_mouse > dvd_left && x_mouse < (dvd_left + dvd_width))
++   /* if(x_mouse > dvd_left && x_mouse < (dvd_left + dvd_width))
+         xin = true;
+     if(y_mouse > dvd_top && y_mouse < (dvd_top + dvd_height))
+         yin = true;
+@@ -43,7 +44,7 @@
+         dvd.style.left = Math.floor(Math.random() * (window.innerWidth - dvd_width));
+         x_incr = ~x_incr + 1;
+         y_incr = ~y_incr + 1;
+-    }
++    }*/
+ }
+ 
+ function frame() {
