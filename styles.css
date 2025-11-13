@@ -108,23 +108,49 @@ body {
     gap: 3vw;
 }
 
+/*DESKTOP*/
+@media screen and (min-width: 1000px) {
+    .button {
+        width: min(max(45px, 4vw), 50px);
+        height: min(max(45px, 4vw), 50px);
+        background-size:contain;
+        background-repeat: no-repeat
+    }
 
-.buttonContainer {
-    width: min(max(40px, 4vw), 55px);
-    height: min(max(40px, 4vw), 55px);
+    .buttonContainer {
+    width: min(max(70px, 4vw), 75px);
+    height: min(max(70px, 4vw), 75px);
     background-color: rgba(14,17,52, 0.75);
     border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    }
 }
+/*DESKTOP END*/
 
-.button {
-    width: min(max(35px, 4vw), 50px);
-    height: min(max(35px, 4vw), 50px);
-    background-size:contain;
-    background-repeat: no-repeat
+
+/*MOBILE*/
+@media screen and (max-width: 1000px) {
+    .button {
+        width: min(max(90px, 4vw), 90px);
+        height: min(max(95px, 4vw), 90px);
+        background-size:contain;
+        background-repeat: no-repeat
+    }
+
+    .buttonContainer {
+    width: 115px;
+    height: 115px;
+    background-color: rgba(14,17,52, 0.75);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 }
+/*MOBILE END*/
+
 
 #discordBtn {
     background-image: url(./images/discord.png);
