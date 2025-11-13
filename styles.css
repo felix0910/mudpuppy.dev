@@ -151,7 +151,7 @@ body {
 
 #users {
     width: 100%;
-    min-height: 800px;
+    min-height: 950px;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -159,9 +159,10 @@ body {
 .user {
     
     width: 85%;
-    max-width: 300px;
-    max-height: 630px;
+    max-width: 500px;
+    max-height: 870px;
     display:flex;
+    background-color: rgb(63,73,207);
 
     align-items: center;
     flex-direction: column;
@@ -199,8 +200,8 @@ body {
 }
 
 .avatar {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     background-image: url(./images/logo.png);
     background-size: cover;
     border-bottom: 5px solid black;
@@ -258,13 +259,14 @@ body {
     justify-content: center;
     gap: 1vw;
     background-color: rgb(63,73,207);
+    border-bottom: none;
 }
 
 .socialsBackground {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     background-color: rgba(114, 122, 192, 0);
-    border-radius: 25px;
+    border-radius: 55px;
     box-shadow: 10px 10px 5px rgba(0,0,0,0.7);
    
     display: flex;
