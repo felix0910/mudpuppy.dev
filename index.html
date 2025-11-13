@@ -1,126 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta charSet="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<div id="dvd">
-    <img src="creative-commons-horse.png" class="logo">
-</div>
+<body>
 
-<script src="./main.js" charset="utf-8"></script>
+    <div class="container">
 
-
-    <div class="margins">
-        <div class="header">
-            <div class="banner">
-                <img src="mudpuppy%20banner.png" class="banner_image">
-            </div>
-            <div class="banner_margin">
-
-            </div>
+        
+            
+        <div class="box">
+            <div class="logo"></div>
+            <div class="title">mudpuppy</div>
         </div>
 
-        <div class="navigation">
-            <button class="navbtn">home</button>
-            <button class="navbtn">team</button>
-            <button class="navbtn">projects</button>
-            <button class="navbtn">dev blog</button>
-            <button class="navbtn">about us</button>
-            <button class="navbtn">contact</button>
-            <button class="navbtn">index</button>
-        </div>
-        <div class="spacer">
+        <div id="tagbox" class="box">
+            <div id="tagline" class="title">
+                a group of talented friends making stuff 
+            </div>
+
+            <div class="buttons">
+                <div class="buttonContainer">
+                    <div title="https://discord.gg/23hhK62Rhk" style="cursor: pointer;" onclick="window.open('https://discord.gg/23hhK62Rhk')"; " id="discordBtn" class="button"></div>
+                </div>
+            </div>
             
         </div>
-        <div class="main">
-            <div class="main_content">
-                <div class="leftside">
-                    <section>
-                        <div class="team">
-                            <div class="team_title">The Team</div>
 
-                            <div class="user">
-                                <img src="images/felix.png" class="avatar">
-                                <div class="user_text">
-                                    <div class="titular">
-                                        <div class="name_title">Felix</div>
-                                        <div class="user_flag"><img src="userstuff/usflag.png" class="flagimg" title="United States of America"></div>
-                                    </div>
+        
 
-                                    <div class="pronouns">he/him</div>
-                                    <div class="user_info">Programmer</div>
-                                    <div class="user_icons">
-                                        <img src="userstuff/panflag.png" class="iconimg" title="Panromantic">
-                                        <img src="userstuff/aceflag.png" class="iconimg" title="Asexual">
-                                    </div>
-                                </div>
-                            </div>
+    </div>
 
-                            <div class="user">
-                                <img src="images/honey.png" class="avatar">
-                                <div class="user_text">
-                                    <div class="titular">
-                                        <div class="name_title">Hon&emacr;y Woffl</div>
-                                        <div class="user_flag"><img src="userstuff/trinidad.png" class="flagimg" title="Trinidad & Tobago"></div>
-                                    </div>
+    <div id="containerBorder" class="container"></div>
 
-                                    <div class="pronouns">they/them | he/him </div>
-                                    <div class="user_info">Artist / Illustrator</div>
-                                    <div class="user_icons">
-                                        <img src="userstuff/tflag.png" class="iconimg" title="Transgender">
-                                        <img src="userstuff/panflag.png" class="iconimg" title="Pansexual">
-                                    </div>
-                                </div>
-                            </div>
+    <!-- TEAM DIV -->
+    <div id="team" class="container">
 
-                            <div class="user">
-                                <img src="images/harmony.png" class="avatar">
-                                <div class="user_text">
-                                    <div class="titular">
-                                        <div class="name_title">Harmony</div>
-                                        <div class="user_flag"><img src="userstuff/trinidad.png" class="flagimg" title="Trinidad & Tobago"></div>
-                                    </div>
+        <div id = "meetTag" class="title">meet the team</div>
 
-                                    <div class="pronouns">he/him</div>
-                                    <div class="user_info">Graphics Designer</div>
-                                    <div class="user_icons">
-                                        <img src="userstuff/panflag.png" class="iconimg" title="Pansexual">
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="user">
-                                <img src="images/poseidon.png" class="avatar">
-                                <div class="user_text">
-                                    <div class="titular">
-                                        <div class="name_title">Poseidon</div>
-                                        <div class="user_flag"><img src="userstuff/usflag.png" class="flagimg" title="United States of America"></div>
-                                    </div>
+        <!-- USER LIST -->
+        <div id="users" class="box">
 
-                                    <div class="pronouns">he/him</div>
-                                    <div class="user_info">Programmer</div>
-                                    <div class="user_icons">
-                                        <img src="userstuff/gay.png" class="iconimg" title="Gay">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="whitespace"></div>
+                <!-- START -->
+
+                <!-- Felix -->
+                <div class="user">
+
+                    <div class="avatarBox">
+
+                        <div class="userTitles">
+                            <div class="userName">Felix</div>
+                            <div class="userPronounce">he/they</div>
                         </div>
-                    </section>
-                    
-                    
-                    <div class="projects">
-                        projects here
+
+                        <div id="felixAvatar" class="avatar"></div>
+
+                        <div class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">role:</div>
+                            <div id="rowText" class="rowItem">game programmer</div>
+                        </div>
+                        <div class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">origin:</div>
+                            <div id="rowText" class="rowItem">united states <td>&#x1F1FA;&#x1F1F8;</div>
+                        </div>
+                        <div id= "aboutMeTitle" class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">about me:</div>
+                            <div id="aboutMeText" class="rowItem"></div>
+                        </div>
+                        <div id="userAboutMe" class="userInfoRow">
+                            <div id="aboutMeText">
+                                "i have a total of 23 terabytes of axolotl thoughts"
+                            </div>
+                        </div>
+                        <div id="rowSocials" class="userInfoRow">
+                            <div class="socialsBackground">
+                                <div title="https://bsky.app/profile/delcogoblin.bsky.social" style="cursor: pointer;" onclick="window.open('https://bsky.app/profile/delcogoblin.bsky.social')" id="bluesky" class="icon"></div>
+                            </div>
+
+                            <div class="socialsBackground">
+                                <div title="https://steamcommunity.com/id/delcogoblin/" style="cursor: pointer;"  onclick="window.open('https://steamcommunity.com/id/delcogoblin/')" id="steam" class="icon"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="devblog">
-                    text filler - devblog
-                    <br>
-                    this site is a work in progress
+
+                <!-- BREAK -->
+
+                <!-- Poseidon -->
+
+                <div class="user">
+
+                    <div class="avatarBox">
+
+                        <div class="userTitles">
+                            <div class="userName">Poseidon</div>
+                            <div class="userPronounce">he/him</div>
+                        </div>
+
+                        <div id="poseidonAvatar" class="avatar"></div>
+
+                        <div class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">role:</div>
+                            <div id="rowText" class="rowItem">backend developer</div>
+                        </div>
+                        <div class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">origin:</div>
+                            <div id="rowText" class="rowItem">united states  <td>&#x1F1FA;&#x1F1F8;</div>
+                        </div>
+                        <div id= "aboutMeTitle" class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">about me:</div>
+                            <div id="aboutMeText" class="rowItem"></div>
+                        </div>
+                        <div id="userAboutMe" class="userInfoRow">
+                            <div id="aboutMeText">
+                                "im so fucking gay LMAO"
+                            </div>
+                        </div>
+                        <div id="rowSocials" class="userInfoRow">
+
+                        </div>
+                    </div>
                 </div>
+
+                <!-- BREAK -->
+
+                <!-- Harmony -->
+
+                <div class="user">
+
+                    <div class="avatarBox">
+
+                        <div class="userTitles">
+                            <div class="userName">Harmony</div>
+                            <div class="userPronounce">he/him</div>
+                        </div>
+
+                        <div id="harmonyAvatar" class="avatar"></div>
+
+                        <div class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">role:</div>
+                            <div id="rowText" class="rowItem">graphics designer</div>
+                        </div>
+                        <div class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">origin:</div>
+                            <div id="rowText" class="rowItem">trinidad and tobago <td>&#x1F1F9;&#x1F1F9;</div>
+                        </div>
+                        <div id= "aboutMeTitle" class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">about me:</div>
+                            <div id="aboutMeText" class="rowItem"></div>
+                        </div>
+                        <div id="userAboutMe" class="userInfoRow">
+                            <div id="aboutMeText">
+                                &#x1F30A "I'm splashin out <div style="color: red; font-size: 25px"> &#x203C</div>
+                            </div>
+                        </div>
+                        <div id="rowSocials" class="userInfoRow">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- BREAK -->
+
+                <!-- Honēy Woffl -->
+
+                <div class="user">
+
+                    <div class="avatarBox">
+
+                        <div class="userTitles">
+                            <div class="userName">Honēy Woffl</div>
+                            <div class="userPronounce">he/they</div>
+                        </div>
+
+                        <div id="honeyAvatar" class="avatar"></div>
+
+                        <div class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">role:</div>
+                            <div id="rowText" class="rowItem">artist / animator</div>
+                        </div>
+                        <div class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">origin:</div>
+                            <div id="rowText" class="rowItem">trinidad and tobago <td>&#x1F1F9;&#x1F1F9;</div>
+                        </div>
+                        <div id= "aboutMeTitle" class="userInfoRow">
+                            <div id="rowTitle" class="rowItem">about me:</div>
+                            <div id="aboutMeText" class="rowItem"></div>
+                        </div>
+                        <div id="userAboutMe" class="userInfoRow">
+                            <div id="aboutMeText">
+                                "Bearer of the Curse"
+                            </div>
+                        </div>
+                        <div id="rowSocials" class="userInfoRow">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- END -->
+        </div>
+        <!-- USER LIST END -->
+
+    </div>
+    <!-- DIV TEAM END -->
+
+
+    <div id="endBumper" class="container">
+
+        <div class="copyright">
+            Site By &copy; 2025 Delco Goblin<br>
+            <div class="photograph">
+                “Philly Skyline at Night” by kjarrett, CC BY 2.0<br>
+                https://www.flickr.com/photos/kjarrett/16439575614
             </div>
-           
+            
         </div>
     </div>
+
+    
+
+</body>
+
+
+</html>
