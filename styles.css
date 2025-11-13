@@ -153,169 +153,343 @@ body {
     width: 100%;
     min-height: 1200px;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 150px;
 }
 
-.user {
+
+@media screen and (max-width: 1000px) {
     
-    width: 85%;
-    max-width: 500px;
-    max-height: 900px;
-    display:flex;
-    background-color: rgb(63,73,207);
+    .user {
+        
+        width: 85%;
+        max-width: 500px;
+        max-height: 800px;
+        display:flex;
+        background-color: rgb(63,73,207);
 
-    align-items: center;
-    flex-direction: column;
-    border: 5px solid black;
-    box-shadow: 5px 11px black;
-    margin-bottom: 50px;
+        align-items: center;
+        flex-direction: column;
+        border: 5px solid black;
+        box-shadow: 5px 11px black;
+        margin-bottom: 50px;
+    }
+
+    .avatarBox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .userTitles {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(63,73,207);
+    }
+
+    .userName {
+        font-size: 65px;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .userPronounce {
+        font-size: 30px;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+        margin-bottom: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .avatar {
+        width: 500px;
+        height: 500px;
+        background-image: url(./images/logo.png);
+        background-size: cover;
+        border-bottom: 5px solid black;
+    }
+
+    .userInfoRow {
+        display:flex;
+        flex-direction: row;
+        height: 60px;
+        background-color: rgb(33,39,124);
+        border-bottom: 5px solid black;
+    }
+
+    .flag {
+        font-size: 55px;
+        margin-left: 10px;
+    }
+
+    .rowItem {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    #rowTitle {
+        font-size: 40px;
+        margin-left: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+
+    #rowText {
+        font-size: 30px;
+        border-right: 6px solid rgb(63,73,207);
+        justify-content: end;
+        background-color: rgb(63,73,207);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+
+    #aboutMeTitle {
+        border-bottom: none;
+    }
+
+    #aboutMeText {
+        font-size: 30px;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+
+    #userAboutMe {
+        background-color: rgb(63,73,207);
+        border-bottom: none;
+        border: 5px solid rgb(0,0,0,0);
+    }
+
+    #rowSocials {
+        width: 100%;
+        height: 111px;
+        justify-content: center;
+        gap: 1vw;
+        background-color: rgb(63,73,207);
+        border-bottom: none;
+    }
+
+    .socialsBackground {
+        width: 75px;
+        height: 75px;
+        background-color: rgba(114, 122, 192, 0);
+        border-radius: 55px;
+        box-shadow: 10px 10px 5px rgba(0,0,0,0.7);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        width: 70%;
+        height: 60%;
+        background-image: url(./images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #bluesky {
+        background-image: url(./images/BlueskyLogo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #steam {
+        height: 70%;
+        background-image: url(./images/Steam.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+    #felixAvatar {
+        background-image: url(./images/felix.png);
+    }
+
+    #poseidonAvatar {
+        background-image: url(./images/poseidon.png);
+    }
+
+    #harmonyAvatar {
+        background-image: url(./images/harmony.png);
+    }
+
+    #honeyAvatar {
+        background-image: url(./images/honey.png);
+    }
 }
 
-.avatarBox {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.userTitles {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(63,73,207);
-}
-
-.userName {
-    font-size: 55px;
-    color: white;
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.userPronounce {
-    font-size: 20px;
-    color: white;
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
-    margin-bottom: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.avatar {
-    width: 500px;
-    height: 500px;
-    background-image: url(./images/logo.png);
-    background-size: cover;
-    border-bottom: 5px solid black;
-}
-
-.userInfoRow {
-    display:flex;
-    flex-direction: row;
-    height: 40px;
-    background-color: rgb(33,39,124);
-    border-bottom: 5px solid black;
-}
-
-.flag {
-    font-size: 35px;
-    margin-left: 10px;
-}
-
-.rowItem {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-}
-
-#rowTitle {
-    font-size: 30px;
-    margin-left: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-
-#rowText {
-    font-size: 20px;
-    border-right: 6px solid rgb(63,73,207);
-    justify-content: end;
-    background-color: rgb(63,73,207);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-
-#aboutMeTitle {
-    border-bottom: none;
-}
-
-#aboutMeText {
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-
-#userAboutMe {
-    background-color: rgb(63,73,207);
-    border-bottom: none;
-    border: 5px solid rgb(0,0,0,0);
-}
-
-#rowSocials {
-    width: 100%;
-    height: 111px;
-    justify-content: center;
-    gap: 1vw;
-    background-color: rgb(63,73,207);
-    border-bottom: none;
-}
-
-.socialsBackground {
-    width: 75px;
-    height: 75px;
-    background-color: rgba(114, 122, 192, 0);
-    border-radius: 55px;
-    box-shadow: 10px 10px 5px rgba(0,0,0,0.7);
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon {
-    width: 70%;
-    height: 60%;
-    background-image: url(./images/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#bluesky {
-    background-image: url(./images/BlueskyLogo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#steam {
-    height: 70%;
-    background-image: url(./images/Steam.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
 
-#felixAvatar {
-    background-image: url(./images/felix.png);
-}
 
-#poseidonAvatar {
-    background-image: url(./images/poseidon.png);
-}
+@media screen and (min-width: 1000px) {
+    
+    .user {
+        
+        width: 85%;
+        max-width: 340px;
+        max-height: 700px;
+        display:flex;
+        background-color: rgb(63,73,207);
 
-#harmonyAvatar {
-    background-image: url(./images/harmony.png);
-}
+        align-items: center;
+        flex-direction: column;
+        border: 5px solid black;
+        box-shadow: 5px 11px black;
+        margin-bottom: 50px;
+    }
 
-#honeyAvatar {
-    background-image: url(./images/honey.png);
+    .avatarBox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .userTitles {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(63,73,207);
+    }
+
+    .userName {
+        font-size: 55px;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .userPronounce {
+        font-size: 20px;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+        margin-bottom: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .avatar {
+        width: 340px;
+        height: 340px;
+        background-image: url(./images/logo.png);
+        background-size: cover;
+        border-bottom: 5px solid black;
+    }
+
+    .userInfoRow {
+        display:flex;
+        flex-direction: row;
+        height: 40px;
+        background-color: rgb(33,39,124);
+        border-bottom: 5px solid black;
+    }
+
+    .flag {
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    .rowItem {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    #rowTitle {
+        font-size: 30px;
+        margin-left: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+
+    #rowText {
+        font-size: 20px;
+        border-right: 6px solid rgb(63,73,207);
+        justify-content: end;
+        background-color: rgb(63,73,207);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+
+    #aboutMeTitle {
+        border-bottom: none;
+    }
+
+    #aboutMeText {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+
+    #userAboutMe {
+        background-color: rgb(63,73,207);
+        border-bottom: none;
+        border: 5px solid rgb(0,0,0,0);
+    }
+
+    #rowSocials {
+        width: 100%;
+        height: 111px;
+        justify-content: center;
+        gap: 1vw;
+        background-color: rgb(63,73,207);
+        border-bottom: none;
+    }
+
+    .socialsBackground {
+        width: 75px;
+        height: 75px;
+        background-color: rgba(114, 122, 192, 0);
+        border-radius: 55px;
+        box-shadow: 10px 10px 5px rgba(0,0,0,0.7);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        width: 70%;
+        height: 60%;
+        background-image: url(./images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #bluesky {
+        background-image: url(./images/BlueskyLogo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #steam {
+        height: 70%;
+        background-image: url(./images/Steam.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+    #felixAvatar {
+        background-image: url(./images/felix.png);
+    }
+
+    #poseidonAvatar {
+        background-image: url(./images/poseidon.png);
+    }
+
+    #harmonyAvatar {
+        background-image: url(./images/harmony.png);
+    }
+
+    #honeyAvatar {
+        background-image: url(./images/honey.png);
+    }
 }
